@@ -175,25 +175,57 @@
 <body>
         <div class="main">
         <h2>Construcción de Software</h2>
-        <h3>Definición</h3>
-        <p>La construcción de software es el proceso de transformar los diseños y especificaciones en código ejecutable.</p>
-        
-        <h3>Subsecciones</h3>
-        <ul>
-            <li>Codificación: Transformación de los diseños en código fuente utilizando lenguajes de programación específicos.</li>
-            <li>Revisión de Código: Evaluación del código para mejorar su calidad y detectar posibles errores.</li>
-            <li>Gestión de Configuraciones: Control de versiones y manejo de cambios en el software durante su desarrollo.</li>
-            <li>Integración Continua: Práctica de combinar cambios de código en un repositorio central de manera automática y frecuente.</li>
-        </ul>
-        
-        <h3>Buenas Prácticas</h3>
-        <p>Es crucial aplicar principios como Clean Code (código limpio) y SOLID para mejorar la mantenibilidad y calidad del software.</p>
-        
-        <h3>Lenguajes de Programación</h3>
-        <p>Se utilizan diversos lenguajes de programación según las necesidades y características del proyecto, como Java, Python, C++, entre otros.</p>
-        
-        <h3>Aspectos a tener en cuenta</h3>
-        <p>Al construir software, es esencial considerar aspectos como la eficiencia del código, la seguridad y la compatibilidad con otras plataformas.</p>
-    </div>
+        <h3>Introducción</h3>
+    <p>El término ingeniería de software se refiere a la creación detallada de software funcional y significativo mediante una combinación de codificación, verificación, pruebas unitarias, pruebas de integración y depuración.</p>
+    <p>El campo de la ingeniería de software está relacionado con todos los demás campos del conocimiento, más fuertemente con el diseño y las pruebas de software. Esto se debe a que el proceso de creación de software en sí implica importantes actividades de prueba e ingeniería de software. También utiliza resultados de diseño y proporciona una entrada para pruebas; estas funciones consisten en diseño y pruebas no KA en este caso. Los límites detallados entre diseño, construcción y prueba (si los hay) varían según los procesos del ciclo de vida del software utilizados en el proyecto. Aunque se puede realizar una planificación detallada antes de la construcción, gran parte del trabajo de diseño se realiza durante la construcción misma. Por lo tanto, Ingeniería de Software KA está muy relacionada con Diseño de Software KA. A través de la construcción, los ingenieros de software realizan pruebas unitarias y pruebas de integración para su trabajo. De modo que el KA de la construcción de software está estrechamente relacionado con el KA de las pruebas de software.</p>
+    <p>El software de creación normalmente produce la mayoría de los elementos de configuración que deben administrarse en un proyecto de software (archivos de código fuente, contenido, casos de prueba, etc.). De esta forma, el KA de Ingeniería de Software también está estrechamente relacionado con el KA de Gestión de la Configuración de Software.</p>
+    <p>Dado que la ingeniería de software depende en gran medida de herramientas y métodos, el KA probablemente posee y utiliza la mayoría de las herramientas, se refiere a las herramientas y métodos de diseño de software de KA. Aunque la calidad del software es importante en todos los KA, el código es el resultado final de un proyecto de software y por lo tanto.</p>
+
+    <h3>Fundamentos de la Ingeniería de Software</h3>
+    <p>Los fundamentos de la ingeniería de software son:</p>
+    <ul>
+        <li>Minimización de la complejidad</li>
+        <li>Anticipación de cambios</li>
+        <li>Construir para asegurar</li>
+        <li>Estándares de construcción</li>
+    </ul>
+    <p>Los primeros tres conceptos se aplican a ambos diseños y construcción. Las siguientes secciones definen estos términos y describen cómo se aplican a la construcción.</p>
+
+    <h4>Minimización de la complejidad</h4>
+    <p>Un factor importante que lleva a las personas a utilizar computadoras es su capacidad muy limitada para retener estructuras e información complejas en su memoria de trabajo, especialmente durante largos períodos de tiempo. Esto conduce a uno de los factores más importantes en la creación de software: minimizar la complejidad. La necesidad de reducir la complejidad afecta fundamentalmente a todos los aspectos del desarrollo de software y es muy importante en el proceso de verificación y prueba del software. La complejidad de crear software solo se logra enfatizándola creación de código simple y legible en lugar de ser inteligente. La complejidad se minimiza mediante el uso de los estándares que se muestran en la Sección Estándares de construcción y varias técnicas especiales resumidas en la Sección Codificación. Esto también se apoya en técnicas de calidad enfocadas a la construcción que se resumen en el apartado 3.5 Calidad de la Construcción.</p>
+
+    <h4>Anticiparse a los cambios</h4>
+    <p>La mayoría del software cambia con el tiempo y la prevención de cambios impulsa muchos aspectos del desarrollo de software. El software es inevitablemente parte de un entorno externo en constante cambio y los cambios en ese entorno externo afectan al software de diferentes maneras. La prevención de cambios se basa en una serie de técnicas especiales resumidas en la sección 3.3 Codificación.</p>
+
+    <h4>Construir para verificar</h4>
+    <p>Construir para probar significa construir software de tal manera que los ingenieros de software puedan encontrar errores fácilmente escribiendo código y realizando pruebas y actividades operativas independientes. Las técnicas específicas que subyacen a la confianza incluyen el cumplimiento de estándares de codificación que permiten la revisión del código, pruebas unitarias, organización del código que permite pruebas automatizadas y limitación del uso de construcciones de lenguaje complejas o difíciles de entender.</p>
+
+    <h4>Uso de estándares</h4>
+    <p>Los estándares que afectan directamente a los elementos de diseño son:</p>
+    <ul>
+        <li>Métodos de comunicación (por ejemplo estándares de formato de contenido y documentos)</li>
+        <li>Lenguajes de programación (por ejemplo estándares de lenguaje para lenguajes como Java y C++)</li>
+        <li>Plataformas (por ejemplo estándares de interfaz de programación para llamadas al sistema operativo)</li>
+        <li>Herramientas (como estándares esquemáticos para notación por ejemplo UML (Unified Modeling Language))</li>
+    </ul>
+    <p><b>Uso de estándares externos.</b> La construcción depende del uso de estándares externos en lenguajes de construcción, herramientas de construcción, interfaces técnicas e interacciones entre Build Software y otros KA. Los estándares provienen de diversas fuentes incluidas especificaciones de interfaz de hardware y software como el Object Management Group (OMG) y organizaciones internacionales como IEEE o ISO.</p>
+    <p><b>Uso de estándares internos.</b> También se pueden crear estándares en función de la organización a nivel de empresa o para su uso en determinados proyectos. Estos estándares permiten coordinar las actividades del grupo, minimizar la complejidad y anticipar y mejorar los cambios.</p>
+
+    <h3>¿Qué es la Construcción de Software?</h3>
+    <p>La construcción de software es una etapa crucial en el desarrollo de software donde se transforma el diseño en código fuente funcional e integrado listo para ser probado y utilizado. Es un proceso que implica diversas actividades entre las que destacan:</p>
+    <ol>
+        <li><b>Implementación:</b> Escribir el código fuente del software de acuerdo con las especificaciones de diseño. Esto involucra la selección de lenguajes de programación, herramientas y técnicas de desarrollo adecuadas para cada componente del software.</li>
+        <li><b>Integración:</b> Combinar los módulos o componentes individuales del software en un sistema completo y funcional. Se asegura que las interfaces entre los componentes sean compatibles y que el sistema opere correctamente en conjunto.</li>
+        <li><b>Pruebas unitarias:</b> Verificar el correcto funcionamiento de cada módulo o componente del software de forma individual. Se utilizan técnicas de prueba como el "Test-Driven Development" para garantizar la calidad del código desde las primeras etapas.</li>
+        <li><b>Construcción:</b> Compilar el código fuente del software en un ejecutable o un conjunto de archivos binarios que puedan ser ejecutados por el sistema operativo. Se utilizan herramientas de compilación y enlazamiento adecuadas para el lenguaje de programación y la plataforma objetivo.</li>
+        <li><b>Empaquetado:</b> Preparar el software para su distribución e instalación, incluyendo la creación de instaladores, documentación, manuales de usuario y otros materiales necesarios para que los usuarios puedan ejecutar el software.</li>
+    </ol>
+
+    <h3>Aspectos importantes a considerar en la construcción de software</h3>
+    <p><b>Estándares de codificación:</b> Definir y seguir estándares de codificación para garantizar la legibilidad, consistencia y calidad del código fuente. Esto facilita la colaboración entre desarrolladores y el mantenimiento del software a largo plazo.</p>
+    <p><b>Gestión de configuraciones:</b> Implementar un sistema de gestión de configuraciones para controlar los cambios en el código fuente, las bibliotecas y otros recursos del proyecto. Esto permite realizar un seguimiento de las versiones del software y facilita la reversión a versiones anteriores en caso de problemas.</p>
+    <p><b>Entornos de desarrollo:</b> Utilizar entornos de desarrollo adecuados que proporcionen las herramientas y bibliotecas necesarias para cada lenguaje de programación y plataforma objetivo. Esto mejora la productividad de los desarrolladores y reduce la aparición de errores.</p>
+    <p><b>Pruebas de integración:</b> Realizar pruebas de integración para verificar que los diferentes componentes del software se comuniquen y funcionen correctamente en conjunto. Esto ayuda a detectar errores tempranos que podrían ser más difíciles de encontrar en etapas posteriores.</p>
+    <p>Esta etapa se podría decir que es la más importante porque como tal se empieza a desarrollar el proyecto con todo el equipo de trabajo involucrado.</p>
 </body>
 </html>

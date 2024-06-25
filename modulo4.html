@@ -174,57 +174,69 @@
 </head>
 <body>
        <div class="main">
-        <h2>Pruebas</h2>
-        <h3>Definición</h3>
-        <p>Las pruebas de software son un conjunto de actividades y procesos cuyo objetivo es evaluar la calidad del software y detectar errores antes de su entrega a los usuarios finales.</p>
-        
-        <h3>Subsecciones</h3>
-        <ul>
-            <li>Planificación de Pruebas</li>
-            <li>Diseño de Pruebas</li>
-            <li>Ejecución de Pruebas</li>
-            <li>Automatización de Pruebas</li>
-        </ul>
-        
-        <h3>Casos de Estudio</h3>
-        <p>Ejemplos prácticos de cómo se realizan las pruebas en proyectos reales.</p>
-        
         <h2>Pruebas de software</h2>
-        <h3>¿Qué son las Pruebas de software?</h3>
-        <p>Las pruebas de software son un conjunto de actividades y procesos cuyo objetivo es evaluar la calidad del software y detectar errores antes de su entrega a los usuarios finales. Es una parte crucial de la gestión de proyectos de software, ya que ayuda a garantizar que el software desarrollado cumpla con los requisitos establecidos, sea confiable, seguro y funcione correctamente.</p>
-        
-        <h3>¿En qué consisten las pruebas de software?</h3>
-        <p>Las pruebas de software involucran diversas actividades, entre las que destacan:</p>
-        <ol>
-            <li><strong>Planificación de pruebas:</strong> Define el alcance, los objetivos, estrategias, calendario y recursos necesarios.</li>
-            <li><strong>Diseño de pruebas:</strong> Crea casos detallados de acciones, datos de entrada esperados y resultados.</li>
-            <li><strong>Implementación de pruebas:</strong> Desarrolla y ejecuta casos de prueba utilizando herramientas automáticas o manuales.</li>
-            <li><strong>Análisis de pruebas:</strong> Evalúa resultados, identifica errores y asegura que cumpla con criterios de aceptación.</li>
-            <li><strong>Informes de pruebas:</strong> Documenta resultados, errores y correcciones, comunicando información clave a interesados.</li>
-        </ol>
-        
-        <h3>¿Por qué son importantes las pruebas de software?</h3>
-        <p>Las pruebas de software son esenciales por varias razones:</p>
-        <ul>
-            <li>Detectan errores antes del lanzamiento.</li>
-            <li>Garantizan calidad y funcionamiento correcto.</li>
-            <li>Mejoran confiabilidad y seguridad del software.</li>
-            <li>Reducen costos corrigiendo errores temprano.</li>
-        </ul>
-        
-        <h3>Tipos de pruebas de software</h3>
-        <p>Existen diferentes tipos enfocados en aspectos específicos:</p>
-        <ul>
-            <li>Pruebas unitarias, de integración, de sistemas, de aceptación, de rendimiento y de seguridad.</li>
-<li>	Pruebas de integración: Verifican que los diferentes componentes del software se comuniquen y funcionen correctamente en conjunto.<li>
-•	<li>Pruebas de sistemas: Evalúan el funcionamiento general del software como un sistema completo.<li>
-•	<li>Pruebas de aceptación: Determinan si el software cumple con los requisitos establecidos por los usuarios y las partes interesadas.<li>
-•	<li>Pruebas de rendimiento: Miden el rendimiento del software bajo carga y evalúan su capacidad para manejar un número determinado de usuarios o transacciones.<li>
-•	<li>Pruebas de seguridad: Verifican que el software esté protegido contra ataques y vulnerabilidades, y que los datos de los usuarios estén seguros.<li>
-</li>
+        <h3>Introducción</h3>
+    <p>Las pruebas son una actividad destinada a evaluar y mejorar la calidad de los productos e identificar defectos y problemas.</p>
+    <p>Las pruebas de software consisten en comprobar dinámicamente el comportamiento de un programa con un conjunto limitado de casos de prueba seleccionados en consecuencia de un número normalmente infinito de ejecuciones frente al comportamiento esperado. En la definición anterior las palabras en cursiva corresponden a los aspectos relevantes en la definición de "Competencia Procesal". En particular:</p>
+    
+    <h4>Dinámico</h4>
+    <p>Este término significa que las pruebas siempre implican ejecutar un programa con datos de entrada (evaluados). Para ser claros no siempre es suficiente ingresar valores para definir una prueba porque un sistema complejo y no determinista puede comportarse de manera diferente con la misma entrada de datos dependiendo del estado en el que se encuentre. En cualquier caso conservamos el término "entrada de datos" en esta KA asumiendo que el término incluye un estado específico del sistema cuando corresponda. Técnicas de prueba adicionales aunque diferentes se describen en Software Quality Assurance KA.</p>
 
-        </ul>
-        
-           </div>
+    <h4>Limitado</h4>
+    <p>En teoría incluso los programas simples pueden tener tantas pruebas que las pruebas exhaustivas pueden llevar meses o años. Por tanto prácticamente todo el conjunto de pruebas podría considerarse infinito. Las pruebas siempre implican una compensación entre recursos y horarios de trabajo limitados por un lado y las necesidades inherentes de pruebas ilimitadas por el otro.</p>
+
+    <h4>Seleccionado</h4>
+    <p>Una diferencia importante entre las técnicas de prueba propuestas es cómo se selecciona el conjunto de prueba. Los ingenieros informáticos deben ser conscientes de que diferentes criterios de selección pueden producir eficiencias muy diferentes. Identificar los criterios de selección de pruebas más apropiados para un conjunto dado de condiciones es un problema complejo; En la práctica se utiliza la experiencia en planificación de pruebas y técnicas de análisis de riesgos.</p>
+
+    <h4>Esperado</h4>
+    <p>Debería ser posible aunque a veces no fácil decidir si el resultado observado al ejecutar un programa es aceptable o no; de lo contrario las pruebas serían inútiles. El comportamiento observado se puede comparar con los resultados esperados del usuario (comúnmente conocidos como pruebas de validación) con especificaciones (pruebas de confirmación) o finalmente con el comportamiento predicho por requisitos implícitos o expectativas razonables. Consulte Requisitos de software TAMBIÉN la Sección 6.4 Pruebas de aceptación para obtener más información.</p>
+
+    <h4>Distribución de temas</h4>
+    <p>La distribución de los temas de KA sobre pruebas de software se muestra en la Figura 1. La primera parte describe los conceptos básicos de las pruebas de software. Cubre los conceptos básicos la terminología básica y los términos clave de las pruebas de software así como las relaciones con otras actividades.</p>
+    <p>El segundo subdominio Niveles de prueba consta de dos puntos ortogonales: el primero (2.1) enumera los niveles en los que tradicionalmente se dividen las pruebas de software grandes mientras que el segundo (2.2) analiza las pruebas de situaciones o funciones y es conocido como los objetivos de la prueba. No todos los tipos de pruebas se aplican a todo el software y no se enumeran todos los tipos posibles.</p>
+    <p>El propósito y los objetivos de las pruebas determinan cómo se identifica el grupo de pruebas su consistencia (cuántas pruebas son suficientes para lograr la meta definida) y su composición (qué casos de prueba deben seleccionarse para lograr la meta definida (aunque generalmente el "logro" Se hace referencia a la parte “. el propósito definido" y solo se utiliza la primera en las dos anteriores como parte de una oración). Los criterios utilizados para responder a la primera pregunta se denominan criterios de evidencia mientras que los criterios para la segunda pregunta se denominan criterios de evidencia. llamado criterio de selección de evidencia.</p>
+    <p>En las últimas décadas se han desarrollado técnicas de prueba adicionales y todavía se están proponiendo nuevas técnicas. Finalmente las consideraciones relacionadas con el proceso de prueba se enumeran en la subsección 5.</p>
+    <p>Un criterio de selección de pruebas es un medio para decidir qué casos de prueba son apropiados. Los criterios de selección se pueden utilizar para seleccionar casos de prueba o comprobar la idoneidad de un conjunto de casos de prueba es decir. decidir si se pueden completar las pruebas. Consulte Implementación en la Sección 5.1 Consideraciones prácticas.</p>
+
+    <h4>Realizar pruebas para la identificación de defectos</h4>
+    <p>Cuando realizamos pruebas para la identificación de defectos una prueba es satisfactoria si produce un error en el sistema. Es éste un enfoque completamente diferente al de realizar pruebas para demostrar que el software satisface las especificaciones u otro conjunto de propiedades deseadas en cuyo caso una prueba satisfactoria es aquella en la que no se observan errores (al menos significativos).</p>
+
+    <h3>El problema del oráculo</h3>
+    <p>Un oráculo es cualquier agente (humano o mecánico) que decide si un programa funciona correctamente durante una prueba produciendo así un resultado de "aprobado" o "reprobado". Hay muchos tipos de oráculos y la automatización de oráculos puede resultar muy compleja y costosa.</p>
+
+    <h3>¿Qué son las pruebas de software?</h3>
+    <p>Las pruebas de software son un conjunto de actividades y procesos cuyo objetivo es evaluar la calidad del software y detectar errores antes de su entrega a los usuarios finales. Es una parte crucial de la gestión de proyectos de software ya que ayuda a garantizar que el software desarrollado cumpla con los requisitos establecidos sea confiable seguro y funcione correctamente.</p>
+
+    <h3>¿En qué consisten las pruebas de software?</h3>
+    <p>Las pruebas de software involucran diversas actividades entre las que destacan:</p>
+    <ul>
+        <li><strong>Planificación de pruebas:</strong> Define el alca   nce de las pruebas, los objetivos, las estrategias, el calendario y los recursos necesarios para llevarlas a cabo. Se establecen los casos de prueba, los criterios de aceptación y las herramientas de prueba que se utilizarán.</li>
+        <li><strong>Diseño de pruebas:</strong> Crea casos de prueba detallados que describen las acciones a realizar, los datos de entrada esperados y los resultados esperados para cada prueba. Se diseñan diferentes tipos de pruebas como pruebas unitarias, pruebas de integración, pruebas de sistemas y pruebas de aceptación.</li>
+        <li><strong>Implementación de pruebas:</strong> Desarrolla y ejecuta los casos de prueba diseñados utilizando herramientas de prueba automatizadas o manuales. Se registran los resultados de las pruebas, los errores encontrados y las incidencias reportadas.</li>
+        <li><strong>Análisis de pruebas:</strong> Evalúa los resultados de las pruebas para identificar la causa de los errores encontrados y determinar si el software cumple con los criterios de aceptación. Se analiza la cobertura de las pruebas y se prioriza la corrección de errores de acuerdo a su severidad.</li>
+        <li><strong>Informes de pruebas:</strong> Documenta los resultados de las pruebas, los errores encontrados, las acciones de corrección realizadas y el estado actual del software. Se comunican los resultados a las partes interesadas del proyecto y se proporciona información para la toma de decisiones.</li>
+    </ul>
+
+    <h3>¿Por qué son importantes las pruebas de software?</h3>
+    <p>Las pruebas de software son esenciales por varias razones:</p>
+    <ul>
+        <li><strong>Detectan errores:</strong> Las pruebas ayudan a identificar y corregir errores en el software antes de que llegue a los usuarios finales. Esto evita problemas, fallos y frustraciones para los usuarios y protege la reputación del desarrollador.</li>
+        <li><strong>Garantizan la calidad:</strong> Las pruebas ayudan a asegurar que el software cumpla con los requisitos establecidos y funcione de la manera esperada. Esto proporciona confianza a los usuarios y a las partes interesadas en el proyecto.</li>
+        <li><strong>Mejoran la confiabilidad:</strong> Las pruebas ayudan a reducir la probabilidad de que el software falle o se comporte de manera inesperada. Esto aumenta la confiabilidad del software y lo hace más seguro para su uso.</li>
+        <li><strong>Reducen costos:</strong> Es más barato corregir errores en las primeras etapas del desarrollo que después de que el software ha sido lanzado. Las pruebas ayudan a detectar errores tempranos y reducir los costos de corrección a largo plazo.</li>
+    </ul>
+
+    <h3>Tipos de pruebas de software</h3>
+    <p>Existen diferentes tipos de pruebas de software que se enfocan en distintos aspectos del software:</p>
+    <ul>
+        <li><strong>Pruebas unitarias:</strong> Prueban módulos o componentes individuales del software de forma aislada.</li>
+        <li><strong>Pruebas de integración:</strong> Verifican que los diferentes componentes del software se comuniquen y funcionen correctamente en conjunto.</li>
+        <li><strong>Pruebas de sistemas:</strong> Evalúan el funcionamiento general del software como un sistema completo.</li>
+        <li><strong>Pruebas de aceptación:</strong> Determinan si el software cumple con los requisitos establecidos por los usuarios y las partes interesadas.</li>
+        <li><strong>Pruebas de rendimiento:</strong> Miden el rendimiento del software bajo carga y evalúan su capacidad para manejar un número determinado de usuarios o transacciones.</li>
+        <li><strong>Pruebas de seguridad:</strong> Verifican que el software esté protegido contra ataques y vulnerabilidades y que los datos de los usuarios estén seguros.</li>
+    </ul>
+    <p>Al realizar pruebas exhaustivas se pueden detectar y corregir errores antes de que el software llegue a los usuarios finales lo que garantiza un producto confiable seguro y funcional.</p>
+
 </body>
 </html>

@@ -174,30 +174,61 @@
 </head>
 <body>
         <div class="main">
-        <h2>Diseño</h2>
-        <h3>Definición</h3>
-        <p>El diseño de software es el proceso de crear una representación abstracta de la arquitectura y los componentes del software. El diseño describe cómo se organizará el software y cómo interactuarán sus diferentes partes.</p>
-        
-        <h3>Modelos de diseño de software</h3>
-        <ul>
-            <li>Diseño modular: Divide el software en módulos independientes y bien definidos.</li>
-            <li>Diseño orientado a objetos: Encapsula datos y comportamientos en objetos que interactúan entre sí.</li>
-            <li>Diseño basado en componentes: Utiliza componentes reutilizables para construir el software.</li>
-        </ul>
-        
-        <h3>Actividades del Área de Diseño</h3>
-        <p>El Área de Diseño en la Guía SWEBOK define las actividades que se deben llevar a cabo para diseñar la arquitectura y los componentes del software.</p>
-        <ul>
-            <li>Diseño arquitectónico: Define la estructura general del software, incluyendo sus componentes principales y sus relaciones.</li>
-            <li>Diseño detallado: Describe los componentes individuales del software, sus interfaces y sus implementaciones.</li>
-            <li>Documentación del diseño: Registra las decisiones de diseño tomadas y la arquitectura del software.</li>
-        </ul>
-        
-        <h3>Importancia del Área de Diseño</h3>
-        <p>El Área de Diseño es fundamental para asegurar que el software sea modular, reutilizable, mantenible y extensible. Un buen diseño de software facilita el desarrollo, las pruebas y el mantenimiento del software a lo largo de su ciclo de vida.</p>
-        
-        <h3>Aspectos a tener en cuenta</h3>
-        <p>Al diseñar software, es crucial considerar una serie de principios clave, como el rendimiento, la organización práctica y funcional que se adapte a las necesidades del usuario, entre otros aspectos de calidad.</p>
-    </div>
+        <h2>Diseño de software</h2>
+        <h3>Introducción</h3>
+    <p>Diseño se define en [IEEE610.12-90] como "la definición de la arquitectura componentes interfaces y otras características de un sistema o componente" y "el resultado de ese proceso". La ingeniería de software es una actividad del ciclo de vida basada en el análisis de los requisitos del software para obtener una descripción de la estructura interna del software que es la base para su creación.</p>
+    <p>Más específicamente el diseño del software (resultado) debe describir la arquitectura del software la descomposición del software la organización de los componentes y las interfaces entre los propios componentes. También debe describir los componentes con suficiente detalle para que puedan construirse.</p>
+    <p>El diseño de software juega un papel importante en el desarrollo de software: permite a la ingeniería de software producir diferentes modelos para la solución de desarrollo. Podemos analizar y evaluar estos modelos para determinar si se pueden utilizar para satisfacer sus necesidades.</p>
+    <p>También podemos explorar y evaluar varias soluciones y compromisos alternativos. Finalmente podemos usar los modelos resultantes para planificar actividades de desarrollo posteriores además de usarlos como entrada o punto de partida para crear y probar una lista de estándares de procesos del ciclo de vida del software por ejemplo IEEE/EIA 12207 [IEEE12207.0-96.] la ingeniería de software consta de dos actividades que encajan entre el post-análisis de software y la construcción de software:</p>
+    <ul>
+        <li>Diseño de arquitectura de software (a veces llamado diseño de alto nivel): descripción de la estructura y organización del software al más alto nivel e identificación de los varios componentes.</li>
+        <li>Diseño detallado del software: descripción suficiente de cada componente para explicar su estructura.</li>
+    </ul>
+
+    <h3>Fundamentos de la ingeniería de software</h3>
+    <p>Los conceptos y terminología presentados aquí forman la base para comprender el papel y el alcance de la ingeniería de software.</p>
+
+    <h3>Conceptos generales de diseño</h3>
+    <p>El software no es el único campo en el que interviene el diseño. En un sentido más amplio podemos ver el diseño como una forma de resolver un problema. [Bud03:c1] Por ejemplo el problema perverso un problema que no tiene solución final es interesante en términos de comprender los límites del diseño. [Bud04:c1] Cuando se entiende el diseño en un sentido general muchos otros conceptos también son de interés: metas límites alternativas representaciones y soluciones. [Smi93]</p>
+
+    <h3>El contexto de la ingeniería de software</h3>
+    <p>Para comprender el papel de la ingeniería de software es importante comprender el contexto de la ingeniería de software el ciclo de vida. Por lo tanto es importante comprender las características principales del análisis de requisitos de software el diseño de software la ingeniería de software y las pruebas de software.</p>
+
+    <h4>Permitir técnicas</h4>
+    <p>Según el diccionario del inglés de Oxford un principio es "una verdad básica o una ley general… que se utiliza como una base del razonamiento o guía de la acción". Los principios del diseño del software también llamados técnicas permisibles [Bus96] son nociones dominantes que consideran fundamental a los diversos acercamientos y conceptos del diseño del software. Las técnicas que lo permiten son las siguientes: [Bas98: c6; Bus96: c6; IEEE1016-98; Jal97: c5 c6; Lis01: c1 c3; Pfl01: c5; Pre04: c9]</p>
+
+    <h3>Aspectos básicos del diseño de software</h3>
+    <p>Se deben considerar varios principios básicos al diseñar software. Hay algunas preocupaciones que todo software debe abordar como la calidad del rendimiento. Otra cuestión importante es cómo se descomponen organizan y forman los paquetes de software. Es tan importante que todos los diseños deben abordarlo de una forma u otra (consulte el Tema 1.4 Técnicas y la Sección 6 Métodos que permiten el diseño de software). Por el contrario otras versiones "abordan un aspecto específico del comportamiento del software que está fuera de alcance pero afecta alguna área de soporte". Los aspectos generalmente no son unidades de descomposición funcional de software sino funciones que afectan sistemáticamente el funcionamiento o la semántica de los componentes‖ (Kic97). Algunas de estas cuestiones multidisciplinarias clave son (en orden alfabético):</p>
+    <ul>
+        <li>Concurrencia: Dividir el software en procesos tareas y subprocesos y dividirlos en versiones de eficiencia atomicidad sincronización y programación relacionadas. [Jef00:c5; 2 de mar: CDS; May97:c30; Pre04: c9]</li>
+        <li>Control y enrutamiento de eventos: Cómo orquestar el flujo de datos y controlar eventos reactivos y temporales utilizando diversos mecanismos como la invocación y los servicios de replicación implícita.</li>
+    </ul>
+
+    <h3>¿Qué es el diseño de software?</h3>
+    <p>El diseño de software es el proceso de crear una representación abstracta de la arquitectura y los componentes del software. El diseño describe cómo se organizará el software y cómo interactuarán sus diferentes partes.</p>
+
+    <h3>Modelos de diseño de software</h3>
+    <p>Existen diferentes modelos de diseño de software que se utilizan para estructurar y organizar el código fuente. Algunos modelos de diseño comunes incluyen:</p>
+    <ul>
+        <li>Diseño modular: Divide el software en módulos independientes y bien definidos.</li>
+        <li>Diseño orientado a objetos: Encapsula datos y comportamientos en objetos que interactúan entre sí.</li>
+        <li>Diseño basado en componentes: Utiliza componentes reutilizables para construir el software.</li>
+    </ul>
+
+    <h3>Actividades del Área de Diseño</h3>
+    <p>El Área de Diseño en la Guía SWEBOK define las actividades que se deben llevar a cabo para diseñar la arquitectura y los componentes del software. Estas actividades incluyen:</p>
+    <ul>
+        <li>Diseño arquitectónico: Define la estructura general del software incluyendo sus componentes principales y sus relaciones.</li>
+        <li>Diseño detallado: Describe los componentes individuales del software sus interfaces y sus implementaciones.</li>
+        <li>Documentación del diseño: Registra las decisiones de diseño tomadas y la arquitectura del software.</li>
+    </ul>
+
+    <h3>Importancia del Área de Diseño</h3>
+    <p>El Área de Diseño es fundamental para asegurar que el software sea modular reutilizable mantenible y extensible. Un buen diseño de software facilita el desarrollo las pruebas y el mantenimiento del software a lo largo de su ciclo de vida.</p>
+
+    <h3>Aspectos a tener en cuenta</h3>
+    <p>Se tiene que tener en cuenta a la hora de diseñar un software una serie de principios claves. Algunas son preocupaciones que todo software debe tratar. Por ejemplo funcionamiento de la calidad como se organiza de una forma práctica y funcional que se adapten a las necesidades del usuario.</p>
+
+    
 </body>
 </html>

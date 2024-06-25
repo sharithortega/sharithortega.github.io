@@ -175,32 +175,79 @@
 <body>
     <div class="main">
         <h2>Requisitos de Software</h2>
-        <h3>¿Qué es un requisito de software?</h3>
-        <p>Un requisito de software es una característica o funcionalidad que debe tener el software para solucionar un problema o satisfacer una necesidad. Los requisitos pueden ser expresados de diversas maneras, incluyendo lenguaje natural, diagramas y modelos.</p>
-        
-        <h3>Clasificación de los requisitos:</h3>
-        <ul>
-            <li>Requisitos funcionales vs. no funcionales: Los requisitos funcionales describen las funcionalidades específicas que debe tener el software, mientras que los requisitos no funcionales describen las características generales del software, como el rendimiento, la seguridad y la usabilidad.</li>
-            <li>Requisitos del producto vs. del proceso: Los requisitos del producto definen las características del software en sí, mientras que los requisitos del proceso definen cómo se debe desarrollar y mantener el software.</li>
-            <li>Requisitos explícitos vs. implícitos: Los requisitos explícitos se encuentran documentados de forma formal, mientras que los requisitos implícitos se deducen del contexto o de las expectativas de los usuarios.</li>
-        </ul>
-        
-        <h3>Actividades del Área de Requisitos:</h3>
-        <p>El Área de Requisitos en la Guía SWEBOK define las actividades que se deben llevar a cabo para elicitar, analizar, especificar y validar los requisitos de software.</p>
-        <ul>
-            <li>Elicitación de requisitos: El proceso de recopilar información sobre las necesidades de los usuarios y otras partes interesadas.</li>
-            <li>Análisis de requisitos: El proceso de comprender y organizar los requisitos recopilados.</li>
-            <li>Especificación de requisitos: El proceso de documentar los requisitos de forma clara y concisa.</li>
-            <li>Validación de requisitos: El proceso de verificar que los requisitos son correctos, completos y consistentes.</li>
-        </ul>
-        
-        <h3>Importancia del Área de Requisitos:</h3>
-        <p>El Área de Requisitos es una de las áreas de conocimiento más importantes de la ingeniería de software. Un buen trabajo en esta área es fundamental para asegurar que el software desarrollado cumpla con las expectativas de los usuarios y satisfaga las necesidades reales.</p>
-        
-        <p>En la siguiente imagen podemos apreciar una plantilla para la toma de requerimientos en un proyecto de software</p>
-        <img src="" alt="Área 1">
+        <h3>Introducción</h3>
+    <p>El Área de Conocimiento de Requisitos de Software (SRK) se relaciona con el análisis, definición y validación de requisitos de software. Es ampliamente reconocido en la industria del software que los proyectos de ingeniería de software son altamente vulnerables si estas actividades se realizan mal.</p>
+    <p>Los requisitos de software expresan las necesidades y limitaciones establecidas para un producto de software que ayudan a resolver un problema específico del mundo real. El término "planificación de requisitos" se utiliza ampliamente en la industria para describir la gestión sistemática de los requisitos. Aunque por coherencia este término no se utiliza en la guía ya que se decidió que en esta edición de la guía se debe evitar el uso del término "ingeniería" para actividades distintas a la ingeniería de software.</p>
+    <p>El peligro de la discontinuidad propuesta es que se pueda inferir un proceso secuencial. Para evitar esto, los procesos de requisitos de la Subzona 2 están diseñados para proporcionar una descripción de alto nivel del proceso de requisitos definiendo los recursos y las limitaciones bajo las cuales opera el proceso y las acciones para definirlo.</p>
 
-        <p>Este es un análisis <a href="https://es.slideshare.net/slideshow/documentos-de-analisis-de-requerimientos/21609896">enlace a SlideShare sobre análisis de requerimientos</a>.</p>
-    </div>
+    <h3>Conceptos básicos de requisitos de software</h3>
+    <h4>Definición de un requisito de software</h4>
+    <p>Básicamente, un requisito de software es una función que se debe proporcionar para resolver un problema específico en el mundo real. El manual se refiere a "requisitos de software" porque se refiere a los problemas que resuelve el software. Por lo tanto, un requisito de software es una característica que debe proporcionarse en el software desarrollado o adaptado para resolver un problema específico. El problema puede ser automatizar parte de la tarea de la persona que utiliza el software, respaldar los procesos comerciales de la organización que implementó el software, corregir errores en el software existente, administrar dispositivos y más. Los usuarios, los procesos comerciales y los dispositivos suelen ser complejos. Los requisitos de software extendidos suelen ser una combinación de requisitos complejos de diferentes personas en diferentes niveles de la organización y el entorno en el que opera el software.</p>
+    <p>Una característica importante de todos los requisitos de software es que se pueden probar. Ciertos requisitos de software pueden resultar difíciles o costosos de verificar. Por ejemplo, verificar los requisitos de eficiencia del procesamiento en un centro de llamadas puede requerir el desarrollo de un software de simulación. Los requisitos del software y el personal de calidad del software deben garantizar que los requisitos puedan verificarse dentro de los recursos disponibles.</p>
+    <p>Las afirmaciones incluyen propiedades distintas de las propiedades de comportamiento que expresan. Los ejemplos comunes incluyen la relación de prioridad que permite hacer concesiones con recursos limitados y el valor de estado que puede usarse para rastrear el progreso del proyecto. Los requisitos de software generalmente se identifican solo para que puedan controlarse en la gestión de la configuración del software y administrarse durante el ciclo de vida del software.</p>
+
+    <h3>Requisitos funcionales y no funcionales</h3>
+    <p>Los requisitos funcionales describen las funciones realizadas por el software. Por ejemplo, adaptándose al formato del texto o modulando la señal. Estas también se conocen como habilidades. Los requisitos no funcionales son aquellos que obligan a una solución. Los requisitos no funcionales a veces se denominan restricciones o requisitos de calidad.</p>
+    <p>Se pueden clasificar además según sean requisitos de rendimiento, requisitos de mantenibilidad, requisitos de seguridad, requisitos de confiabilidad o uno de muchos otros requisitos de software. Estos temas también se analizan en la publicación Software Quality KA.</p>
+
+    <h3>Modelos de proceso</h3>
+    <p>Este tema tiene como objetivo proporcionar una comprensión de que el cumplimiento de los requisitos:</p>
+    <ul>
+        <li>No es una actividad discreta en las primeras etapas del ciclo de vida del software sino un proceso que se inicia temprano en el proyecto y luego se refina durante el ciclo de vida.</li>
+        <li>Identifica los requisitos de software como unidades de ensamblaje y los gestiona utilizando los mismos métodos de gestión de configuración de software que otros productos de proceso del ciclo de vida del software.</li>
+        <li>Debe adaptarse al contexto organizacional y del proyecto.</li>
+    </ul>
+    <p>El problema se refiere principalmente a cómo el análisis, definición y validación de diferentes tipos y límites definidos para proyectos. El tema también incluye características que contribuyen al proceso de reclamaciones como estudios de marketing y rentabilidad.</p>
+
+    <h3>Agentes de procesamiento</h3>
+    <p>Este tema describe las funciones de las personas involucradas en el proceso de reclamos. Este proceso es de naturaleza multidisciplinaria y el especialista en requisitos debe actuar como intermediario entre el grupo de partes interesadas y el departamento de ingeniería de software. Además del especialista en requisitos, participan muchas personas, cada una de las cuales tiene su propia función en el software. Las partes interesadas varían de un proyecto a otro pero siempre incluyen usuarios/operadores y clientes (no necesariamente los mismos). Ejemplos típicos de partes interesadas del software son (pero no se limitan a):</p>
+    <ul>
+        <li>Usuarios: este grupo incluye a los usuarios del software. A menudo se trata de un grupo heterogéneo de personas con diferentes roles y necesidades.</li>
+        <li>Clientes: este grupo incluye aquellos que solicitaron el software o que representan el mercado objetivo del software.</li>
+        <li>Analistas de mercado: un producto de mercado masivo no tiene un cliente que lo ordene por lo que los especialistas en marketing a menudo tienen que identificar las necesidades del mercado y actuar como clientes.</li>
+        <li>Organismos reguladores: muchas áreas de aplicación como el transporte público o la banca están reguladas. El software en estos dominios debe cumplir con los requisitos reglamentarios.</li>
+        <li>Ingenieros de software: estas personas tienen un interés legítimo en beneficiarse del software por ejemplo mediante el uso de componentes en otros productos. En este escenario, si un cliente de un producto en particular tiene requisitos especiales que comprometen la reutilización de componentes, los diseñadores de software deben sopesar cuidadosamente sus intereses y los intereses del cliente.</li>
+    </ul>
+
+    <h3>Soporte y gestión de procesos</h3>
+    <p>Este tema presenta los recursos de gestión de proyectos necesarios y consumidos por el proceso posterior. Establece el contexto para la primera subzona (inicio y alcance) de la tecnología de gestión de software. Su objetivo principal es crear un vínculo entre las actividades del proceso definidas en el punto 2.1 y las cuestiones de costos, recursos humanos, capacitación y herramientas.</p>
+
+    <h3>Calidad y mejora de procesos</h3>
+    <p>Este tema trata sobre la evaluación de los requisitos para la calidad y la mejora de procesos. Su objetivo es enfatizar el papel dominante del pos-procesamiento en términos de costo del software y puntualidad y satisfacción del cliente. Ayudará a impulsar el proceso de requisitos a través de estándares de calidad de sistemas y software y modelos de mejora de procesos. El proceso de calidad y la mejora están estrechamente relacionados con la calidad del software y la tecnología de hardware de KA. De particular interés son las aplicaciones de la calidad del software, sus características y medición y la definición del proceso del software.</p>
+    <p>Esta sección cubre:</p>
+    <ul>
+        <li>Cobertura posterior al proceso con estándares y modelos de mejora.</li>
+        <li>Mediciones y evaluaciones comparativas posteriores al proceso.</li>
+        <li>Plan de desarrollo e implementación.</li>
+    </ul>
+
+    <h3>¿Qué es un requisito de software?</h3>
+    <p>Un requisito de software es una característica o funcionalidad que debe tener el software para solucionar un problema o satisfacer una necesidad. Los requisitos pueden ser expresados de diversas maneras incluyendo lenguaje natural, diagramas y modelos.</p>
+
+    <h3>Clasificación de los requisitos</h3>
+    <p>Los requisitos de software se pueden clasificar en diferentes categorías según su tipo, propósito y nivel de detalle. Algunas clasificaciones comunes incluyen:</p>
+    <ul>
+        <li>Requisitos funcionales vs. no funcionales: Los requisitos funcionales describen las funcionalidades específicas que debe tener el software mientras que los requisitos no funcionales describen las características generales del software como el rendimiento, la seguridad y la usabilidad.</li>
+        <li>Requisitos del producto vs. del proceso: Los requisitos del producto definen las características del software en sí mientras que los requisitos del proceso definen cómo se debe desarrollar y mantener el software.</li>
+        <li>Requisitos explícitos vs. implícitos: Los requisitos explícitos se encuentran documentados de forma formal mientras que los requisitos implícitos se deducen del contexto o de las expectativas de los usuarios.</li>
+    </ul>
+
+    <h3>Actividades del Área de Requisitos</h3>
+    <p>El Área de Requisitos en la Guía SWEBOK define las actividades que se deben llevar a cabo para elicitar, analizar, especificar y validar los requisitos de software. Estas actividades incluyen:</p>
+    <ul>
+        <li>Elicitación de requisitos: El proceso de recopilar información sobre las necesidades de los usuarios y otras partes interesadas.</li>
+        <li>Análisis de requisitos: El proceso de comprender y organizar los requisitos recopilados.</li>
+        <li>Especificación de requisitos: El proceso de documentar los requisitos de forma clara y concisa.</li>
+        <li>Validación de requisitos: El proceso de verificar que los requisitos son correctos, completos y consistentes.</li>
+    </ul>
+
+    <h3>Importancia del Área de Requisitos</h3>
+    
+    <p>El Área de Requisitos es una de las áreas de conocimiento más importantes de la ingeniería de software. Un buen trabajo en esta área es fundamental para asegurar que el software desarrollado cumpla con las expectativas de los usuarios y satisfaga las necesidades reales.</p>
+    <p>
+        <a href="https://drive.google.com/file/d/1HBf-tq36riygSXoragIT9gcSFGPAqHMM/view?usp=drive_link" target="_blank">
+            Link de la plantilla
+        </a>
+    </p>
 </body>
 </html>

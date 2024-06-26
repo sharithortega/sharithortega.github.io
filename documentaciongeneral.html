@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title- SWEBOK</title>
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: 'Georgia', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url("Designer (6).jpeg") no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            line-height: 1.6;
+            height: auto; /* Cambiado de 100vh a auto */
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Capa semitransparente */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 108%;
+            background-color: rgba(255, 255, 255, 0.4); /* Ajusta el color y la opacidad según sea necesario */
+            z-index: 2;
+        }
+
+                /* Contenido principal */
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Estilo para el título */
+        @keyframes zoom {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 4px black; /* Añadir contorno al texto */
+            animation: zoom 3s infinite ease-in-out;
+        }
+
+        h2, h3 {
+            color: white;
+            text-shadow: 2px 2px 4px black; /* Añadir contorno al texto */
+        }
+
+        a {
+            color: #ffd700; /* Cambiar color de enlace */
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #ff8c00;
+        }
+
+        /* Estilos del menú */
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #444;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu > li {
+            position: relative;
+        }
+
+        .menu > li > a {
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu > li > a:hover {
+            background-color: #575757;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 200px;
+        }
+
+        .submenu li {
+            position: relative;
+        }
+
+        .submenu li a {
+            padding: 20px;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .submenu li a:hover {
+            background-color: #575757;
+        }
+
+        .submenu li a img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .menu li:hover > .submenu {
+            display: block;
+        }
+
+        /* Contenedor principal */
+        .main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+            border-radius: 10px;
+        }
+
+        /* Encabezado de sección */
+        h2 {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        h3 {
+            color: #ffd700; /* Cambiar color de los subtítulos */
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>Documentación de la Página Web</h2>
+        
+        <h3>Actores Primarios:</h3>
+        <ul>
+            <li>Luis Chacon</li>
+            <li>Sharith Ortega</li>
+            <li>Jaider Solano</li>
+            <li>Julián Galvis</li>
+        </ul>
+
+        <h3>1. Introducción</h3>
+        <h4>1.1. Descripción del Proyecto</h4>
+        <p>Este sitio web presenta las áreas de conocimiento del SWEBOK (Software Engineering Body of Knowledge), proporcionando información detallada sobre cada área clave de la ingeniería de software.</p>
+
+        <h4>1.2. Estructura General</h4>
+        <p>La página principal tiene una estructura de tarjetas, cada una dirigida a un módulo específico, y una cabecera que contiene el título de la página.</p>
+
+        <h3>2. Instalación</h3>
+        <h4>2.1. Requisitos del Sistema</h4>
+        <p>- Software: Navegadores compatibles (Chrome, Firefox, Safari).</p>
+
+        <h4>2.2. Instrucciones de Instalación</h4>
+        <ul>
+            <li>Clonar el repositorio desde GitHub.</li>
+            <li>Colocar los archivos en el directorio raíz de un servidor web.</li>
+            <li>Asegurarse de que las rutas de los archivos sean correctas.</li>
+        </ul>
+
+        <h3>3. Uso</h3>
+        <h4>3.1. Guía Rápida del Usuario</h4>
+        <p>En la página principal, haga clic en las tarjetas correspondientes para navegar a los módulos específicos: Requisitos de software, Diseño de software, Construcción de software y Pruebas de software.</p>
+
+        <h4>3.2. Descripción de los Módulos</h4>
+        <ul>
+            <li>Requisitos de software: Métodos y técnicas para la recopilación y documentación de requisitos.</li>
+            <li>Diseño de software: Principios y patrones de diseño.</li>
+            <li>Construcción de software: Metodologías y mejores prácticas de desarrollo.</li>
+            <li>Pruebas de software: Estrategias y herramientas de prueba.</li>
+        </ul>
+
+        <h3>4. Desarrollo</h3>
+        <h4>4.1. Estructura del Código</h4>
+        <p>El proyecto incluye los siguientes archivos y carpetas:</p>
+        <ul>
+            <li><code>index.html</code>: Página principal.</li>
+            <li><code>modulo1.html</code>, <code>modulo2.html</code>, <code>modulo3.html</code>, <code>modulo4.html</code>: Páginas de los módulos.</li>
+            <li><code>assets/</code>: Directorio para imágenes y estilos.</li>
+        </ul>
+
+        <h4>4.2. Configuración del Entorno de Desarrollo</h4>
+        <ul>
+            <li>Configurar un servidor web local.</li>
+            <li>Clonar el repositorio y colocar los archivos en el servidor.</li>
+            <li>Verificar las rutas a los archivos.</li>
+        </ul>
+
+        <h3>5. Despliegue</h3>
+        <h4>5.1. Instrucciones de Despliegue</h4>
+        <ul>
+            <li>Subir los archivos al servidor de producción.</li>
+            <li>Verificar las rutas y enlaces.</li>
+            <li>Probar la página en diferentes navegadores.</li>
+        </ul>
+
+        <h3>6. Soporte y Mantenimiento</h3>
+        <h4>6.1. Solución de Problemas</h4>
+        <ul>
+            <li>Problemas de visualización: Verificar los enlaces a los archivos CSS e imágenes.</li>
+            <li>Enlaces rotos: Asegurarse de que las rutas sean correctas.</li>
+        </ul>
+
+        <h4>6.2. Contacto</h4>
+        <p>Para soporte adicional, contactar al administrador del proyecto.</p>
+
+        <h2>Diseño</h2>
+        <h3>1. Introducción</h3>
+        <h4>1.1. Objetivo del Diseño</h4>
+        <p>El objetivo del diseño de esta página web es proporcionar una interfaz intuitiva y visualmente atractiva para presentar las áreas de conocimiento del SWEBOK.</p>
+
+        <h3>2. Estructura y Estilos</h3>
+        <h4>2.1. Estructura General</h4>
+        <p>La estructura de la página se organiza en una sola página con las siguientes secciones principales:</p>
+        <ul>
+            <li>Cabecera: Contiene el título de la página.</li>
+            <li>Menú de Navegación: Lista de enlaces a los módulos, desplegable en dispositivos móviles.</li>
+            <li>Contenedor Principal: Tarjetas que enlazan a los módulos.</li>
+        </ul>
+
+        <h4>2.2. Estilos CSS</h4>
+        <p>Los estilos CSS se definen en el archivo <code>index.html</code> y se aplican a varios elementos de la página.</p>
+
+        <h4>2.2.1. Estilos Globales</h4>
+        <ul>
+            <li>Fuente: ‘Georgia’, sans-serif.</li>
+            <li>Colores: Fondo con imagen, texto en negro.</li>
+            <li>Disposición: Flexbox para centrar el contenido vertical y horizontalmente.</li>
+        </ul>
+
+        <h4>2.2.2. Estilos de la Cabecera</h4>
+        <ul>
+            <li>Color del Texto: Blanco.</li>
+            <li>Sombra: Ligera sombra para resaltar el texto.</li>
+        </ul>
+
+        <h4>2.2.3. Estilos del Menú</h4>
+        <ul>
+            <li>Fondo: Color oscuro.</li>
+            <li>Texto: Blanco, cambia a gris oscuro al pasar el ratón.</li>
+        </ul>
+
+        <h4>2.2.4. Estilos de las Tarjetas</h4>
+        <ul>
+            <li>Diseño: Tarjetas con sombra y efectos de hover.</li>
+            <li>Layout: Grid de 2 columnas, responsive a pantallas pequeñas.</li>
+        </ul>
+
+        <h4>2.3. Estilos Responsivos</h4>
+        <p>Ajustes para pantallas pequeñas, como la visualización de una sola columna en el grid y la activación de un menú desplegable.</p>
+
+        <h3>3. Elementos Interactivos</h3>
+        <h4>3.1. Menú Desplegable</h4>
+        <p>Para dispositivos móviles, el menú se pliega y despliega mediante la clase <code>menu-toggle</code>.</p>
+
+        <h4>3.2. Tarjetas Interactivas</h4>
+        <p>Cada tarjeta en el contenedor principal enlaza a una página de módulo específica.</p>
+    </div>
+</body>
+</html>
+
